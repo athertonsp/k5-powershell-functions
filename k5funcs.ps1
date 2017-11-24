@@ -2379,7 +2379,7 @@ param
     }
     catch
     {
-    Display-Error -error "Create server failed..." -errorObj $_
+    Display-Error -error "Deleting server failed..." -errorObj $_
     $result = $_.Exception.Response.GetResponseStream()
     $reader = New-Object System.IO.StreamReader($result)
     $reader.BaseStream.Position = 0
